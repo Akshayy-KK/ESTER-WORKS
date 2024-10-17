@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ESTER WORKS</title>
+    <style>
+        body {
+            background: url('images/background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Monotype Corsiva', cursive;
+            color: #D4AF37; /* Gold headings */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Grouped background tint for header, tagline, and navigation */
+        .header-container {
+            background: rgba(0, 0, 0, 0.6); /* Single black tint for all elements */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Branding and tagline styling */
+        .header-container h1 {
+            font-size: 60px; /* Increased font size */
+            color: #D4AF37;
+            margin: 0; /* Remove margin to fit inside the container */
+        }
+
+        .header-container p {
+            font-size: 22px; /* Increased font size */
+            color: #AB82FF; /* Cosmic purple shade for the tagline */
+            margin: 10px 0; /* Add space between tagline and navigation */
+        }
+
+        /* Navigation Menu */
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .nav a {
+            color: #D4AF37;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 24px; /* Increased font size */
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #AB82FF;
+        }
+
+        /* Perfume section */
+        .perfume-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        /* Individual perfume item */
+        .perfume-item {
+            margin-bottom: 50px;
+            position: relative;
+            width: 60%;
+        }
+
+        /* Larger Image Size */
+        .perfume-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s, background 0.5s;
+        }
+
+        /* Perfume Name */
+        .perfume-name {
+            font-size: 36px; /* Increased font size */
+            color: #D4AF37;
+            text-align: center;
+            margin-bottom: 10px;
+            background: rgba(0, 0, 0, 0.6); /* Black tint */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Increased Description Font Size */
+        .perfume-description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            transition: opacity 0.5s;
+            font-size: 26px; /* Increased font size */
+        }
+
+        .perfume-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .perfume-item:hover .perfume-description {
+            opacity: 1;
+        }
+
+        /* About Us Section */
+        #about-us {
+            background-color: rgba(0, 0, 0, 0.7); /* Black tint */
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Contact Us Section */
+        #contact-us {
+            background-color: rgba(0, 0, 0, 0.7); /* Black tint */
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #D4AF37;
+            color: black;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #AB82FF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Grouped Branding, Tagline, and Navigation -->
+    <div class="header-container">
+        <h1>THE ESTER WORKS</h1>
+        <p>Intinge in luxuria esterum</p>
+
+        <!-- Navigation Menu -->
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#about-us">ABOUT US</a>
+            <a href="#contact-us">CONTACT US</a>
+            <a href="#">SHOP</a>
+        </div>
+    </div>
+
+    <!-- Perfume Section -->
+    <div class="perfume-section">
+
+        <!-- The 10-I-See -->
+        <div class="perfume-item">
+            <div class="perfume-name">The 10-I-See</div>
+            <img src="images/The 10-I-see.jpeg" alt="The 10-I-See Perfume">
+            <div class="perfume-description">
+                <p>A journey to the sea, where lemongrass and cherry blossom dance on the breeze. Your vacation in paradise, bottled. 74.99 CAD.</p>
+            </div>
+        </div>
+
+        <!-- The Bourbon -->
+        <div class="perfume-item">
+            <div class="perfume-name">The Bourbon</div>
+            <img src="images/The Bourbon.jpeg" alt="The Bourbon Perfume">
+            <div class="perfume-description">
+                <p>As night descends, Bourbon’s rich allure unfolds—a scent of opulence, perfect for the evening’s grandest moments. 109.99 CAD.</p>
+            </div>
+        </div>
+
+        <!-- The Prosecco -->
+        <div class="perfume-item">
+            <div class="perfume-name">The Prosecco</div>
+            <img src="images/The Prosecco.jpeg" alt="The Prosecco Perfume">
+            <div class="perfume-description">
+                <p>A toast to the sweetness of life. Prosecco's golden esters sing with effervescent joy, a celebration captured in a scent. 79.99 CAD.</p>
+            </div>
+        </div>
+
+        <!-- The Raina -->
+        <div class="perfume-item">
+            <div class="perfume-name">The Raina</div>
+            <img src="images/the raina.jpeg" alt="The Raina Perfume">
+            <div class="perfume-description">
+                <p>The waves kiss your feet, and the bonfire warms the evening air. A night to remember, captured in a fragrance. 210.70 CAD.</p>
+            </div>
+        </div>
+
+        <!-- The Vivaldi -->
+        <div class="perfume-item">
+            <div class="perfume-name">The Vivaldi</div>
+            <img src="images/the vivaldi.jpeg" alt="The Vivaldi Perfume">
+            <div class="perfume-description">
+                <p>A symphony of earth and air, where sandalwood whispers in musk-laden melodies. Vivaldi conducts a masterpiece for the senses. 89.99 CAD.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <h2>About Us</h2>
+        <p>At THE ESTER WORKS, we believe that every fragrance tells a story. Our scents are crafted with the finest esters, blending nature's elements into bottles of luxury. We celebrate the richness of aromas, from the soft waves of the ocean to the deep musk of the forest. Dive into our world, where every bottle whispers a journey of elegance, opulence, and beauty.</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="full-name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="contact" placeholder="Contact Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="postal-code" placeholder="Postal Code" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
